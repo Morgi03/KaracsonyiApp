@@ -5,12 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
+        android:textSize="35sp"
+        android:textColor="#8C2727"
+        android:id="@+id/countdown"
+        android:background="#371010"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,6 +23,9 @@
 
     <com.jetradarmobile.snowfall.SnowfallView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        app:snowflakeImage="@drawable/snowflake"
+        app:snowflakeSizeMin="3dp"
+        app:snowflakeSizeMax="10dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
